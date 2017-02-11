@@ -8,12 +8,12 @@
 ?>
 
     <!-- jQuery -->
-    <?php echo '<script src="/application/assets/js/jquery/jquery.min.js"></script>';?>
-    <?php echo '<script src="/application/assets/js/jquery/jquery-3.1.1.min.js"></script>';?>
+    <?php echo '<script src="'.base_url().'application/assets/js/jquery/jquery.min.js"></script>';?>
+    <?php echo '<script src="'.base_url().'application/assets/js/jquery/jquery-3.1.1.min.js"></script>';?>
     
 
     <!-- Bootstrap Core JavaScript -->
-    <?php echo '<script src="/application/assets/js/bootstrap/bootstrap.min.js"></script>';?>
+    <?php echo '<script src="'.base_url().'application/assets/js/bootstrap/bootstrap.min.js"></script>';?>
     
     
         <!-- Flot Charts JavaScript -->
@@ -27,19 +27,19 @@
     
 
     <!-- Metis Menu Plugin JavaScript -->
-    <?php echo '<script src="/application/assets/js/metisMenu/metisMenu.min.js"></script>';?>
+    <?php echo '<script src="'.base_url().'application/assets/js/metisMenu/metisMenu.min.js"></script>';?>
 
     <!-- Morris Charts JavaScript -->
     
-    <?php echo '<script src="/application/assets/js/raphael/raphael.min.js"></script>'; ?>
-    <?php echo '<script src="/application/assets/js/morris/morris.min.js"></script>';?>
-    <?php echo '<script src="/application/assets/js/morris/morris-data.js"></script>';?>
+    <?php echo '<script src="'.base_url().'application/assets/js/raphael/raphael.min.js"></script>'; ?>
+    <?php echo '<script src="'.base_url().'application/assets/js/morris/morris.min.js"></script>';?>
+    <?php echo '<script src="'.base_url().'application/assets/js/morris/morris-data.js"></script>';?>
     
 
 
     
     <!-- Custom Theme JavaScript -->
-    <?php echo '<script src="/application/assets/js/sb-admin-2.js"></script>';?>
+    <?php echo '<script src="'.base_url().'application/assets/js/sb-admin-2.js"></script>';?>
     
     
     <script>        

@@ -27,20 +27,20 @@ $mainPageTitle = 'Waf - MS ui';
 
     <!-- Bootstrap Core CSS -->
     <?php // echo '<link href="'. asset_url().'css/bootstrap/bootstrap.min.css" rel="stylesheet">'; ?>
-    <?php echo '<link href="/application/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">'; ?>
+    <?php echo '<link href="'.base_url().'application/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">'; ?>
 
     <!-- MetisMenu CSS -->
-    <?php echo '<link href="/application/assets/css/metisMenu/metisMenu.min.css" rel="stylesheet">'; ?>
+    <?php echo '<link href="'.base_url().'application/assets/css/metisMenu/metisMenu.min.css" rel="stylesheet">'; ?>
 
     <!-- Custom CSS -->
-    <?php echo '<link href="/application/assets/css/sb-admin-2.css" rel="stylesheet">';?>
+    <?php echo '<link href="'.base_url().'application/assets/css/sb-admin-2.css" rel="stylesheet">';?>
 
     <!-- Morris Charts CSS -->
-    <?php echo '<link href="/application/assets/css/morris/morris.css" rel="stylesheet">'; ?>
+    <?php echo '<link href="'.base_url().'application/assets/css/morris/morris.css" rel="stylesheet">'; ?>
     
 
     <!-- Custom Fonts -->
-    <?php echo '<link href="/application/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">';?>
+    <?php echo '<link href="'.base_url().'application/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">';?>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
