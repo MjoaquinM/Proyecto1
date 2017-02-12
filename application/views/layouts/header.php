@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -27,7 +27,7 @@ $mainPageTitle = 'Waf - MS ui';
 
     <!-- Bootstrap Core CSS -->
     <?php // echo '<link href="'. asset_url().'css/bootstrap/bootstrap.min.css" rel="stylesheet">'; ?>
-    <?php var_dump(base_url());?>
+
     <?php echo '<link href="'.base_url().'application/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">'; ?>
 
     <!-- MetisMenu CSS -->
@@ -37,12 +37,10 @@ $mainPageTitle = 'Waf - MS ui';
     <?php echo '<link href="'.base_url().'application/assets/css/sb-admin-2.css" rel="stylesheet">';?>
 
     <!-- Morris Charts CSS -->
-    <?php echo '<link href="'.base_url().'application/assets/css/morris/morris.css" rel="stylesheet">'; ?>
-    
+    <?php echo '<link href="'.base_url().'application/assets/css/morris/morris.css" rel="stylesheet">'; ?>    
 
     <!-- Custom Fonts -->
     <?php echo '<link href="'.base_url().'application/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">';?>
-    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
