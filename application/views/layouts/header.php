@@ -26,9 +26,9 @@ $mainPageTitle = 'Waf - MS ui';
     <title><?php echo $pageTitle; ?></title>
 
     <!-- Bootstrap Core CSS -->
-    <?php // echo '<link href="'. asset_url().'css/bootstrap/bootstrap.min.css" rel="stylesheet">'; ?>
-
     <?php echo '<link href="'.base_url().'application/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">'; ?>
+
+    <?php echo '<link href="'.base_url().'application/assets/css/jquery-ui/jquery-ui.min.css" rel="stylesheet">'; ?>
 
     <!-- MetisMenu CSS -->
     <?php echo '<link href="'.base_url().'application/assets/css/metisMenu/metisMenu.min.css" rel="stylesheet">'; ?>

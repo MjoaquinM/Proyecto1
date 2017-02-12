@@ -15,26 +15,35 @@ class Upload extends CI_Controller {
         }
 
         public function do_upload(){
-            $config['upload_path']          = base_url().'uploads/';
+
+            $config['upload_path']          = './uploads/';
             $config['allowed_types']        = 'gif|jpg|png';
-            $config['max_size']             = 1024;
+            $config['overwrite']             = TRUE;
+            $config['max_size']             = 2048000;
             $config['max_width']            = 0;
             $config['max_height']           = 0;
 
             $this->load->library('upload', $config);
             $this->load->helper('url');
-            var_dump($config['upload_path']);
             
             if (!$this->upload->do_upload('userfile')){
-                $error = 'no anda ni mierda';
+                $error = $this->upload->display_errors();
                 $return = '<div class="alert alert-danger"><strong>Error: </strong>'.$error.'</div>';
             }else{
-                $data = array('upload_data' => $this->upload->data());
-                $html .= 'Your file was successfully uploaded!';
-                $html .= '<div class="alert alert-danger"><strong>Error: </strong>'.$html.'</div>';
-                $return = $html;
+                $return = '<div class="alert alert-success"><strong>Your file was successfully uploaded!</strong></div>';
             }
-            echo $return;
+            echo json_encode($return);
+        }
+
+        public function file_verification(){
+            if (isset($_POST['nombre']) && $_POST['nombre']=="") {
+                $status = 'false';
+            }elseif (file_exists($_SERVER['DOCUMENT_ROOT'].'/uploads/'.$_POST['nombre'])) {
+                $status = 'true';
+            }else{
+                $status = 'false';
+            }
+            echo $status;
         }
 }
 ?>

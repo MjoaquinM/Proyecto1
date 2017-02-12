@@ -15,6 +15,7 @@ class Logfiles extends CI_Controller {
                 //Load Helpers
                 $this->load->helper('url');
                 $this->load->helper('utility_helper');
+                $this->load->helper('form');
                 
                 //Load Views
 //		$this->load->view('welcome_message');
