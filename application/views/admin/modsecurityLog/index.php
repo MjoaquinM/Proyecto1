@@ -27,12 +27,10 @@
             <div class="panel-body">
                 <div id="form1">
                     <?php echo form_open(base_url("index.php/upload/"), array('id' => 'formulario1', 'enctype' => 'multipart/form-data')); ?>
-                        <input type="text" name="nombre" value="hola" style="display: none;" />
-                        <input type="file" name="userfile" id="upload-input-load" size="20" />
+                        <?php echo form_upload(array('id' => 'upload-input-load', 'name' =>'userfile', 'size' => '20')); ?>
                         <br />
-                        <!--<input id="upload-input" type="submit" value="upload" />-->
-                        <button id="upload-button-load">Upload</button>
-                    </form>
+                        <?php echo form_submit(array('id' => 'upload-button-load', 'value' => 'Upload')); ?> 
+                    <?php echo form_close(); ?>
                 </div>
                 <div id="form-response1"></div>
             </div>
