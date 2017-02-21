@@ -154,13 +154,14 @@ class Upload extends CI_Controller {
 
         public function do_upload(){
             $config['upload_path']          = './uploads/';
-            $config['allowed_types']        = 'gif|jpg|png|log|txt';
+            $config['allowed_types']        = 'gif|jpg|png|log|txt|gz|zip';
             $config['overwrite']            = TRUE;
-            $config['max_size']             = 2048000;
+            //$config['max_size']             = 2048000;
+            $config['max_size']             = 0;
 
             $this->load->library('upload', $config);
             $this->load->helper('url');
-            
+            /*
             if (!$this->upload->do_upload('userfile')){
                 $error = $this->upload->display_errors();
                 $return = '<div class="alert alert-danger"><strong>Error: </strong>'.$error.'</div>';
@@ -185,8 +186,9 @@ class Upload extends CI_Controller {
                     fwrite($aux, $line);
                     fclose($aux);
                 }
-            }
-            echo json_encode($return);
+            }*/
+            //echo json_encode($return);
+            echo $_SERVER['CONTENT_LENGTH'];
         }
 
         public function file_verification(){
