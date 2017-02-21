@@ -62,6 +62,10 @@
             return false;
         }
 
+        jQuery("#aplly_req_body").on('click',function(){
+            
+        });
+
         jQuery("#dialog-1").dialog({
            autoOpen: false,
            buttons: {
