@@ -62,10 +62,6 @@
             return false;
         }
 
-        jQuery("#aplly_req_body").on('click',function(){
-            
-        });
-
         jQuery("#dialog-1").dialog({
            autoOpen: false,
            buttons: {
@@ -98,6 +94,31 @@
 
                 //alert(jQuery("#upload-input-load").val());
             });
+        });
+
+        /////////////BodyRequestHandling///////////////
+        jQuery("#dialog-1-rbh").dialog({
+            autoOpen: false,
+            buttons: {
+              Aceptar: function() {
+                var form = jQuery('#form1-rbh');
+                $.ajax({
+                    type: form.attr('method'),
+                    url: form.attr('action'),
+                    data: form.serialize(),
+                    success: function(response){
+                        jQuery("#response").empty();
+                        jQuery("#response").append('<label class="alert alert-warning">'+response+'</label>');
+                    }
+                });
+                $(this).dialog("close");},
+              Cancelar: function() {$(this).dialog("close");}
+            },
+        });
+
+        jQuery("#apply_req_body").on('click',function(){
+            
+            jQuery("#dialog-1-rbh").dialog('open');
         });
 
     </script>

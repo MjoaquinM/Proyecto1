@@ -24,6 +24,25 @@ Class ReqBodyHandling extends CI_Controller{
     }
 
     public function apply_changes(){
-        
+        $this->load->helper('url');
+        $this->load->helper('file');
+
+        if (isset($_POST['SecRequestBodyAccess'])) {
+            $fileModificated = '';
+            $file = fopen(MODSECURITY_CONF_PATH, 'r');
+            while (!feof($file)) {
+                $line = fgets($file);
+                if (is_numeric(strpos($line, 'SecRequestBodyAccess'))){
+                    $line = '';
+                    $line = 'SecRequestBodyAccess '.$_POST['SecRequestBodyAccess'].PHP_EOL;
+                }
+                $fileModificated .= $line;
+            }
+            fclose($file);
+            $file = fopen(MODSECURITY_CONF_PATH, 'w');
+            fwrite($file,$fileModificated);
+            fclose($file);
+        }
+        echo $_POST['SecRequestBodyAccess'];
     }
 }
