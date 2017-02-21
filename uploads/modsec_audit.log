@@ -1,0 +1,100 @@
+ --c38fb137-A--
+ [11/Dec/2012:09:19:25 +0700] UMaYLX8AAQEAAA0DAtcAAAAC 192.168.2.129 1039 192.168.2.131 80
+ --c38fb137-B--
+ GET / HTTP/1.1
+ Accept-Encoding: identity
+ user-agent: Java/1.6.0_19
+ Host: 192.168.2.131
+ Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+ Connection: keep-alive
+ 
+ --c38fb137-F--
+ HTTP/1.1 200 OK
+ X-Powered-By: PHP/5.4.6-1ubuntu1
+ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+ Cache-Control: no-cache
+ Pragma: no-cache
+ Vary: Accept-Encoding
+ Content-Type: text/html; charset=utf-8
+ Set-Cookie: 8c0a8e2264b88cc76451e9364191b62a=p6ebvo0vdgieemjh743ibeghr3; path=/
+ Content-Length: 11706
+ Keep-Alive: timeout=5, max=100
+ Connection: Keep-Alive
+ 
+ --c38fb137-E--
+ menor!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"mayor
+ menorhtml xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" mayor
+ 	menorheadmayor
+ 		  menorbase href="http://192.168.2.131/" /mayor
+   menormeta http-equiv="content-type" content="text/html; charset=utf-8" /mayor
+   menormeta name="generator" content="Joomla! - Open Source Content Management" /mayor
+   menortitlemayorHomemenor/titlemayor
+   menorlink href="/index.php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" /mayor
+   menorlink href="/index.php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" /mayor
+   menorlink href="/templates/beez5/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /mayor
+   menorscript src="/media/system/js/mootools-core.js" type="text/javascript"mayormenor/scriptmayor
+   menorscript src="/media/system/js/core.js" type="text/javascript"mayormenor/scriptmayor
+   menorscript src="/media/system/js/caption.js" type="text/javascript"mayormenor/scriptmayor
+   menorscript src="/media/system/js/mootools-more.js" type="text/javascript"mayormenor/scriptmayor
+   menorscript src="/templates/beez5/javascript/md_stylechanger.js" type="text/javascript" defer="defer"mayormenor/scriptmayor
+   menorscript type="text/javascript"mayor
+ window.addEvent('load', function() {
+ 				new JCaption('img.caption');
+ 			});function keepAlive() {	var myAjax = new Request({method: "get", url: "index.php"}).send();} window.addEvent("domready", function(){ keepAlive.periodical(840000); });
+   menor/scriptmayor
+ 
+ 		menorlink rel="stylesheet" href="/templates/system/css/system.css" type="text/css" /mayor
+ 		menorlink rel="stylesheet" href="/templates/beez5/css/position.css" type="text/css" media="screen,projection" /mayor
+ 		menorlink rel="stylesheet" href="/templates/beez5/css/layout.css" type="text/css" media="screen,projection" /mayor
+ 		menorlink rel="stylesheet" href="/templates/beez5/css/print.css" type="text/css" media="Print" /mayor
+ 		menorlink rel="stylesheet" href="/templates/beez5/css/beez5.css" type="text/css" /mayor
+ 		menorlink rel="stylesheet" href="/templates/beez5/css/general.css" type="text/css" /mayor
+ 				menor!--[if lte IE 6]mayor
+ 			menorlink href="/templates/beez5/css/ieonly.css" rel="stylesheet" type="text/css" /mayor
+ 		menor![endif]--mayor
+ 		menor!--[if IE 7]mayor
+ 			menorlink href="/templates/beez5/css/ie7only.css" rel="stylesheet" type="text/css" /mayor
+ 		menor![endif]--mayor
+ 		menorscript type="text/javascript" src="/templates/beez5/javascript/hide.js"mayormenor/scriptmayor
+ 
+ 		menorscript type="text/javascript"mayor
+ 			var big ='72%';
+ 			var small='53%';
+ 			var altopen='is open';
+ 			var altclose='is closed';
+ 			var bildauf='/templates/beez5/images/plus.png';
+ 			var bildzu='/templates/beez5/images/minus.png';
+ 			var rightopen='Open info';
+ 			var rightclose='Close info';
+ 			var fontSizeTitle='Font size';
+             var bigger='Bigger';
+             var reset='Reset';
+             var smaller='Smaller';
+             var biggerTitle='Increase size';
+             var resetTitle='Revert styles to default';
+             var smallerTitle='Decrease size';
+ 		menor/scriptmayor
+ 
+ 	menor/headmayor
+ 
+ 	menorbodymayor
+ 
+ menordiv id="all"mayor
+ 	menordiv id="back"mayor
+ 			menordiv id="header"mayor
+ 							menordiv class="logoheader"mayor
+ 					menorh1 id="logo"mayor
+ 
+ 																				menorspan class="header1"mayor
+ 										menor/spanmayormenor/h1mayor
+ 				menor/divmayormenor!-- end logoheader --mayor
+ 
+ 					menorul class="skiplinks"mayor
+ 						menorlimayormenora href="#main" class="u2"mayorSkip to contentmenor/amayormenor/limayor
+ 						menorlimayormenora href="#nav" class="u2"mayorJump to main navigation and loginmenor/amayormenor/limayor
+ 											menor/ulmayor
+ 					menorh2 class="unseen"mayorNav view searchmenor/h2mayor
+ 					menorh3 class="unseen"mayorNavigationmenor/h3mayor
+ 					
+ 					menordiv id="line"mayor
+ 					menordiv id="fontsize"mayormenor/divmayor

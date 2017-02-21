@@ -35,6 +35,14 @@
                 <div id="form-response1"></div>
             </div>
         </div>
+
+        <?php echo form_open(base_url("index.php/borrame1/"), array('enctype' => 'multipart/form-data')); ?>
+
+        <?php echo form_upload(array('id' => 'upload-input-load', 'name' =>'userfile', 'size' => '20')); ?>
+        <?php echo form_submit(array('id' => 'upload-button-load', 'value' => 'Upload')); ?> 
+            
+        <?php echo form_close(); ?>
+
     </div>
         
 </div>
